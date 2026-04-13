@@ -31,11 +31,17 @@ jobs:
       - name: Merge Markdown and convert to PDF
         run: |
           # Collect all markdown files in a deterministic order
-          MD_FILES=$(find . -maxdepth 1 -name '*.md' -not -name 'LICENSE*' | sort)
-          echo "Merging files: $MD_FILES"
+          mapfile -t MD_FILES < <(find . -maxdepth 1 -name '*.md' -not -name 'LICENSE*' | sort)
+
+          if [ ${#MD_FILES[@]} -eq 0 ]; then
+            echo "::error::No markdown files found to convert"
+            exit 1
+          fi
+
+          echo "Merging files: ${MD_FILES[*]}"
 
           # Convert merged markdown to a standalone HTML file
-          pandoc $MD_FILES \
+          pandoc "${MD_FILES[@]}" \
             -o merged-output.html \
             --standalone \
             --metadata title="DarkSpace Documentation"
