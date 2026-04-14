@@ -1,20 +1,14 @@
-Almost Mrs. Wick's Sugar Cream Pie 
+# Almost Mrs. Wick's Sugar Cream Pie 
 
- 
+Ingredients 
 
-1 1/2 C. heavy cream 
-
-1 C. whole milk 
-
-2 C. white sugar 
-
-3/4 C AP flour 
-
-3 Tbsp. butter, melted 
-
-1 tsp. vanilla extract 
-
-grated nutmeg 
+- 1 1/2 C. heavy cream 
+- 1 C. whole milk 
+- 2 C. white sugar 
+- 3/4 C AP flour 
+- 3 Tbsp. butter, melted 
+- 1 tsp. vanilla extract
+- grated nutmeg 
 
  
 
