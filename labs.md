@@ -24,15 +24,6 @@
 ***
 
 
-```mermaid
-flowchart TD
-A[Create branch & make changes] --> B[Push branch]
-B --> C[Open Pull Request]
-C --> D[Review]
-D --> E{Decision}
-E -->|Comment| D
-E -->|Request changes| F[Update code]
-F --> B
-E -->|Approve| G[Merge]
-G --> H["Delete branch (optional)"]
-```
+### Contnet Link
+
+https://learn.microsoft.com/en-us/training/courses/gh-900t00
